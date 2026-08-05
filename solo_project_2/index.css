@@ -1,0 +1,69 @@
+@font-face{
+    font-family: "Seven Segment";
+    src:url(./Seven\ Segment.ttf) format('truetype');
+}
+
+body {
+    background: linear-gradient(10deg, black, gray);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    margin-bottom: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0d3b45;
+    padding: 10px 35px 30px 35px;
+    border-radius: 20px;
+}
+
+button{
+    color: inherit;
+    background-color: transparent;
+    padding: 1rem;
+    border: 1px solid #4dd0e1;
+    border-radius: 5px;
+}
+
+.title{
+    color: #e17800;
+    font-family: sans-serif;
+    line-height: 1.4;
+    font-size:xx-large;
+    font-weight: 900;
+    margin: 0;
+    text-shadow: 0px 0px 5px black;
+}
+
+.score, button{
+    font-family: "Seven Segment";
+}
+
+.score{
+    margin: 0;
+    line-height: 2;
+    font-size:xx-large;
+    font-weight: 400;
+    color: tomato;
+}
+
+.score-box{
+    margin: 10px 0;
+    background: black;
+    padding: 10px auto;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winningTeam{
+    color: #00e676;
+}
