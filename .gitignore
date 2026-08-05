@@ -1,0 +1,44 @@
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# Node (for when projects start using it)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+package-lock.json.bak
+.npm/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Logs
+logs/
+*.log
+
+# Scratch
+*.tmp
+*.bak
+draft/
+scratch/
