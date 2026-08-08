@@ -9,7 +9,7 @@
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img alt="Projects" src="https://img.shields.io/badge/projects-2-success?style=flat-square">
+  <img alt="Projects" src="https://img.shields.io/badge/projects-3-success?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
 </p>
 
@@ -21,7 +21,7 @@ Each folder is a self-contained project — open its `index.html` and it runs. N
 dependencies, no framework. The goal is to get genuinely comfortable with the fundamentals before
 reaching for tools that hide them.
 
-Projects are listed newest-first.
+Projects are listed in the order I built them.
 
 ## Projects
 
@@ -29,6 +29,7 @@ Projects are listed newest-first.
 |:-:|---------|------------|------------|-------|
 | 01 | **Nalanda Vidyaniketan** | A tribute page to my school — a hero banner, three "era" cards, and an alumnus note. | HTML · CSS | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_1/) · [Code](./solo_project_1) |
 | 02 | **Basketball Scoreboard** | A live scoreboard with +1 / +2 / +3 buttons for each team and an automatic highlight on whoever is leading. | HTML · CSS · JavaScript | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_2/) · [Code](./solo_project_2) |
+| 03 | **Password Generator** | Generates two random 15-character passwords at a click, drawn from a 91-character set. | HTML · CSS · JavaScript | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_3/) · [Code](./solo_project_3) |
 
 ## Tech stack
 
@@ -76,6 +77,13 @@ SOLO-PROJECTS/
 │   ├── index.css
 │   ├── index.js
 │   └── README.md
+├── solo_project_3/          # Password Generator
+│   ├── images/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+├── .gitattributes           # Keeps line endings consistent across machines
 ├── .gitignore
 ├── LICENSE
 ├── TEMPLATE.md              # Starter README for each new project
@@ -86,7 +94,7 @@ SOLO-PROJECTS/
 
 1. Create the folder: `solo_project_N/` with its own `index.html`.
 2. Copy `TEMPLATE.md` into it as `README.md` and fill in the blanks.
-3. Add one row to the **Projects** table above (newest at the top).
+3. Add one row to the bottom of the **Projects** table above.
 4. Bump the project count badge at the top of this file.
 5. Commit with a clear message:
 
@@ -100,9 +108,10 @@ git push origin main
 
 - [x] Project 1 — static layout, images, positioning
 - [x] Project 2 — DOM manipulation, events, conditional logic
-- [ ] Project 3 — working with arrays and rendering lists
-- [ ] Project 4 — fetching data from an API
-- [ ] Project 5 — saving state so it survives a refresh
+- [x] Project 3 — arrays, loops, randomness, functions that return values
+- [ ] Project 4 — rendering a list from an array
+- [ ] Project 5 — fetching data from an API
+- [ ] Project 6 — saving state so it survives a refresh
 
 ## About me
 
