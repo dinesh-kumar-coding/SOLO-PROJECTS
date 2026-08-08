@@ -1,6 +1,6 @@
 @font-face{
     font-family: "Seven Segment";
-    src:url(./Seven\ Segment.ttf) format('truetype');
+    src: url("./fonts/Seven Segment.ttf") format('truetype');
 }
 
 body {
