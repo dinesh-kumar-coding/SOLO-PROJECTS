@@ -50,5 +50,7 @@ Open `index.html` in any browser.
 
 ## Possible improvements
 
+<!-- Only list things you could actually build with what you know today. -->
+
 - [ ] <Idea one>
 - [ ] <Idea two>

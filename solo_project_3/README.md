@@ -72,8 +72,7 @@ Open `index.html` in any browser. Everything is local — no internet connection
 
 ## Possible improvements
 
-- [ ] Click a password to copy it to the clipboard
-- [ ] A length slider so you can choose more than 15 characters
+- [ ] An input box to choose the password length instead of it always being 15
 - [ ] Checkboxes to include or exclude symbols, numbers, and uppercase
-- [ ] A strength meter under each result
-- [ ] Swap `Math.random()` for `crypto.getRandomValues()` — it's cryptographically secure, which matters for real passwords
+- [ ] Generate more than two passwords at a time
+- [ ] Remember the last generated passwords with `localStorage`

@@ -80,7 +80,6 @@ Then visit <http://localhost:5500>.
 ## Possible improvements
 
 - [ ] A **New Game** button that resets both scores to zero
-- [ ] Undo the last basket
-- [ ] A game clock and quarter counter
-- [ ] Keyboard shortcuts for scoring
-- [ ] Persist the score so a refresh doesn't wipe the game
+- [ ] Save the score to `localStorage` so a refresh doesn't wipe the game
+- [ ] Show a "WINNER" label above whichever team is ahead
+- [ ] Let the team names be edited instead of always saying HOME and GUEST

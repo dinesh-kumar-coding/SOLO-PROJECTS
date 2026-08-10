@@ -52,10 +52,10 @@ Open `index.html` in any browser. Nothing to install.
 
 ## Possible improvements
 
-- [ ] Add proper responsive breakpoints so the cards stack cleanly on narrow phones
-- [ ] Replace `.jpeg` photos with `.webp` to cut page weight
-- [ ] Add `loading="lazy"` to the images below the fold
-- [ ] Improve alt text to describe each photo rather than label it
+- [ ] Make the cards stack neatly on narrow phone screens
+- [ ] Write better `alt` text — describe each photo instead of just labelling it
+- [ ] Add a hover effect to the cards
+- [ ] Add a fourth card for another memory
 
 ---
 
