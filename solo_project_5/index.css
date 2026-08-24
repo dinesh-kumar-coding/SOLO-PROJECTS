@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 40px 0px;
+    background-color: whitesmoke;
+    font-family: "Inter", "Helvetica Neue", sans-serif;
+    color: #221f26;
+}
+
+.app{
+    width: 375px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
+}
+
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid #C6C6C6;
+    height: 67px;
+}
+
+.logo{
+    width: 127px;
+    height: 50px;
+}
+
+.avatar{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post{
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.post:last-child{
+    border-bottom: none;
+}
+
+.post-header{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 18px;
+}
+
+.post-name{
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.post-location{
+    font-size: 11px;
+    margin: 3px 0 0 0;
+}
+
+.post-photo-wrapper{
+    position: relative;
+}
+
+.post-photo{
+    display: block;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.post-icons{
+    display: flex;
+    gap: 14px;
+    padding: 14px 20px 8px 10px;
+}
+
+.icon-button{
+    background-color: white;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.icon-button img{
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+.icon-button:hover{
+    transform: scale(1.2);
+    opacity: 0.55;
+}
+
+.icon-button:active{
+    transform: scale(0.9);
+}
+
+.post-footer{
+    padding: 3px 20px 18px 15px;
+}
+
+.post-likes{
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0 0 9px 0;
+}
+
+.post-caption{
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.post-username{
+    font-weight: 700;
+}
+
+.post-big-heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    opacity: 0;
+}
+
+.post-big-heart-pop{
+    animation: heart-pop 0.9s ease;
+}
+
+@keyframes heart-pop{
+    0% { opacity: 0; transform: scale(0.4);}
+    25% { opacity: 1; transform: scale(1.15);}
+    45% { opacity: 1; transform: scale(1);}
+    100% { opacity: 0; transform: scale(1);}
+}

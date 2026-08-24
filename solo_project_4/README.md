@@ -69,6 +69,8 @@ if(localStorage.getItem("input")){
 
 ```
 solo_project_4/
+├── images/
+│   └── convert-favicon.png   # Tab icon
 ├── index.html
 ├── style.css
 └── script.js
