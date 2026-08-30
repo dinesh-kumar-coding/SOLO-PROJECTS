@@ -10,7 +10,7 @@
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img alt="Projects" src="https://img.shields.io/badge/projects-5-success?style=flat-square">
+  <img alt="Projects" src="https://img.shields.io/badge/projects-6-success?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
 </p>
 
@@ -22,8 +22,8 @@ Each folder is a self-contained project with its own README. The path runs from 
 fundamentals through JavaScript, React, TypeScript and Next.js, then into Node, Express and
 databases — so this repo starts with plain static pages and gets progressively heavier as I go.
 
-Everything so far is vanilla HTML/CSS/JS: open the folder's `index.html` and it runs, no install
-required. Projects that need a build step or a server will say so in their own README.
+Everything so far is vanilla HTML/CSS/JS with no install step. Most projects run by opening the
+folder's `index.html`; the ones that need to be served over `http://` say so in their own README.
 
 Projects are listed in the order I built them.
 
@@ -36,6 +36,7 @@ Projects are listed in the order I built them.
 | 03 | **Password Generator** | Generates two random 15-character passwords at a click, drawn from a 91-character set. | HTML · CSS · JavaScript | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_3/) · [Code](./solo_project_3) |
 | 04 | **Unit Converter** | Converts one number into length, volume and mass — both directions at once — and remembers your last input. | HTML · CSS · JavaScript · localStorage | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_4/) · [Code](./solo_project_4) |
 | 05 | **Oldagram** | An Instagram feed for old painters, built entirely from an array. Double-tap a photo to like it. | HTML · CSS · JavaScript | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_5/) · [Code](./solo_project_5) |
+| 06 | **Dinesh's Diner** | A restaurant order app — build an order, get a meal-deal discount, pay through a card modal, then rate it. | HTML · CSS · JavaScript · ES modules | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_6/) · [Code](./solo_project_6) |
 
 ## Tech stack
 
@@ -53,16 +54,17 @@ git clone https://github.com/dinesh-kumar-coding/SOLO-PROJECTS.git
 cd SOLO-PROJECTS
 ```
 
-Then open any project's `index.html` directly in a browser — that's it.
+Then open any project's `index.html` directly in a browser — that's it for projects 1 to 5.
 
-If you'd rather serve it over `http://` (recommended, since some browsers restrict local file access):
+**Project 6 uses ES modules, so it has to be served over `http://`.** Same goes for any project
+where a custom font or module import doesn't load:
 
 ```bash
 # Python 3
-cd solo_project_2 && python -m http.server 5500
+cd solo_project_6 && python -m http.server 5500
 
 # or with Node
-npx serve solo_project_2
+npx serve solo_project_6
 ```
 
 Then visit <http://localhost:5500>.
@@ -101,6 +103,13 @@ SOLO-PROJECTS/
 │   ├── index.css
 │   ├── index.js
 │   └── README.md
+├── solo_project_6/          # Dinesh's Diner
+│   ├── images/
+│   ├── index.html
+│   ├── index.css
+│   ├── index.js
+│   ├── data.js              # Menu data, imported as a module
+│   └── README.md
 ├── .gitattributes           # Keeps line endings consistent across machines
 ├── .gitignore
 ├── LICENSE
@@ -129,6 +138,7 @@ git push origin main
 - [x] Project 3 — arrays, loops, randomness, functions that return values
 - [x] Project 4 — template literals, number formatting, `localStorage` persistence
 - [x] Project 5 — arrays of objects, rendering a list, keeping track of state
+- [x] Project 6 — ES modules, array methods, event delegation, forms and modals
 - [ ] Loading data from an API
 - [ ] First React app
 - [ ] TypeScript and Next.js

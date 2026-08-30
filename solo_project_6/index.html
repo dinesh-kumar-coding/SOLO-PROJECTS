@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dinesh's Diner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon-diner.png" type="image/png">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="hero">
+        <h1 class="hero-title">Dinesh's Diner</h1>
+        <p class="hero-subtitle">The best burgers and pizzas in town.</p>
+
+        <button class="theme-btn" id="theme-btn" aria-label="Switch theme">
+          🌙
+        </button>
+      </header>
+
+      <main>
+        <ul class="menu" id="menu"></ul>
+        <section class="order hidden" id="order" aria-live="polite">
+          <h2 class="order-title">Your order</h2>
+
+          <ul class="order-list" id="order-list"></ul>
+
+          <p class="discount hidden" id="discount">
+            <span>Meal deal 🍕+🍺</span>
+            <span id="discount-amount"></span>
+          </p>
+
+          <p class="total">
+            <span>Total price:</span>
+            <span id="total-price">$0</span>
+          </p>
+
+          <button class="btn" id="complete-order-btn">Complete order</button>
+        </section>
+
+        <section class="thanks hidden" id="thanks">
+          <p class="thanks-messaage" id="thanks-message"></p>
+
+          <p class="rating-label" id="rating-label">How was your experience?</p>
+          <div class="stars" id="stars"></div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal-overlay hidden" id="modal-overlay">
+      <form class="modal" id="payment-form">
+        <h2 class="modal-title">Enter card details</h2>
+
+        <input
+          type="text"
+          class="modal-input"
+          id="name-input"
+          placeholder="Enter your name"
+          required
+        />
+
+        <input
+          type="text"
+          class="modal-input"
+          id="card-input"
+          placeholder="Enter card number"
+          required
+        />
+
+        <input
+          type="text"
+          class="modal-input"
+          id="cvv-input"
+          placeholder="Enter CVV"
+          required
+        />
+
+        <button class="btn" type="submit">Pay</button>
+      </form>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
