@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    color: #2B2B2B;
+    background-color: #FFFFFF;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    padding: 0.9rem 1.1rem;
+    border-bottom: 1px solid #EDEDED;
+    background-color: #F5F5F5;
+}
+
+.color-input {
+    flex-shrink: 0;
+    width: 4.25rem;
+    height: 2.5rem;
+    padding: 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* the browser wraps the swatch in its own padded box - strip it back
+   so the colour fills the control like it does in the design */
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 3px;
+}
+
+.color-input::-webkit-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+.color-input::-moz-color-swatch {
+    border: none;
+    border-radius: 3px;
+}
+
+.mode-select {
+    flex-grow: 1;
+    min-width: 10rem;
+    height: 2.5rem;
+    padding: 0 2.25rem 0 0.85rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #2B2B2B;
+    cursor: pointer;
+
+    /* drop the native arrow and draw our own drop-down symbol(svg) on the right */
+    appearance: none;
+    background-image: url("images/drop-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.85rem center;
+}
+
+.get-btn {
+    flex-shrink: 0;
+    height: 2.5rem;
+    padding: 0 0.9rem;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #2B2B2B;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.get-btn:hover {
+    background-color: #F5F5F5;
+    border-color: #CFCFCF;
+}
+
+.get-btn:disabled {
+    opacity: 0.55;
+    cursor: wait;
+}
+
+.status {
+    margin: 0;
+    padding: 0 1.1rem;
+    font-size: 0.8125rem;
+    color: #A33A3A;
+}
+
+.status:empty {
+    display: none;
+}
+
+.scheme {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+.swatch {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.swatch__color {
+    flex: 1;
+}
+
+.swatch__hex {
+    height: 4rem;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    color: #2B2B2B;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.swatch__hex:hover {
+    background-color: #F3F3F3;
+}
+
+@media (max-width: 640px) {
+
+    .scheme {
+        flex-direction: column;
+    }
+
+    .swatch {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .swatch__hex {
+        flex-shrink: 0;
+        width: 7rem;
+        height: auto;
+        border-left: 1px solid #EDEDED;
+    }
+
+    .get-btn {
+        flex-grow: 1;
+    }
+}

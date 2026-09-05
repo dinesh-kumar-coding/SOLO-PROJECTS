@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Scheme Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/favicon-color_palette.png" type="image/png">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <header class="controls">
+
+            <input 
+            type="color" 
+            class="color-input" 
+            id="color-input"
+            value="#f55a5a"
+            aria-label="Seed color"> <!-- *Note: this always gives back a value like '#f55a5a' - lowercase, with a leading #. But API wants it WITHOUT #. -->
+
+            <!-- *Note: There eight values come straight from the API docs - anything else returns 400(incase the API is not changed further) -->
+            <select name="color-scheme" id="mode-select" class="mode-select" aria-label="Color scheme mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome Dark</option>
+                <option value="monochrome-light">Monochrome Light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic Complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+
+            <button class="get-btn" id="get-scheme-btn">Get color scheme</button>
+
+        </header>
+
+        <p class="status" id="status" role="status"></p>
+
+        <!-- filled in by script.js -->
+        <main class="scheme" id="scheme"></main>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
