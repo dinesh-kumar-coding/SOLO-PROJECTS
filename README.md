@@ -10,7 +10,7 @@
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img alt="Projects" src="https://img.shields.io/badge/projects-6-success?style=flat-square">
+  <img alt="Projects" src="https://img.shields.io/badge/projects-7-success?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
 </p>
 
@@ -25,7 +25,6 @@ databases — so this repo starts with plain static pages and gets progressively
 Everything so far is vanilla HTML/CSS/JS with no install step. Most projects run by opening the
 folder's `index.html`; the ones that need to be served over `http://` say so in their own README.
 
-Projects are listed in the order I built them.
 
 ## Projects
 
@@ -37,6 +36,8 @@ Projects are listed in the order I built them.
 | 04 | **Unit Converter** | Converts one number into length, volume and mass — both directions at once — and remembers your last input. | HTML · CSS · JavaScript · localStorage | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_4/) · [Code](./solo_project_4) |
 | 05 | **Oldagram** | An Instagram feed for old painters, built entirely from an array. Double-tap a photo to like it. | HTML · CSS · JavaScript | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_5/) · [Code](./solo_project_5) |
 | 06 | **Dinesh's Diner** | A restaurant order app — build an order, get a meal-deal discount, pay through a card modal, then rate it. | HTML · CSS · JavaScript · ES modules | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_6/) · [Code](./solo_project_6) |
+| 07 | **My Learning Journal** | A multi-page blog — home, about, and article pages for writing about what I'm learning. | HTML · CSS · JavaScript | *Still building this one.* |
+| 08 | **Color Scheme Generator** | Pick a seed colour and a scheme type, get five matching colours from an API. Click a hex to copy it. | HTML · CSS · JavaScript · The Color API | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_8/) · [Code](./solo_project_8) |
 
 ## Tech stack
 
@@ -110,25 +111,19 @@ SOLO-PROJECTS/
 │   ├── index.js
 │   ├── data.js              # Menu data, imported as a module
 │   └── README.md
+├── solo_project_7/          # My Learning Journal — in progress
+│   
+├── solo_project_8/          # Color Scheme Generator
+│   ├── images/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
 ├── .gitattributes           # Keeps line endings consistent across machines
 ├── .gitignore
 ├── LICENSE
 ├── TEMPLATE.md              # Starter README for each new project
 └── README.md                # You are here
-```
-
-## Adding a new project
-
-1. Create the folder: `solo_project_N/` with its own `index.html`.
-2. Copy `TEMPLATE.md` into it as `README.md` and fill in the blanks.
-3. Add one row to the bottom of the **Projects** table above.
-4. Bump the project count badge at the top of this file.
-5. Commit with a clear message:
-
-```bash
-git add solo_project_N
-git commit -m "Add Solo Project N: <short description>"
-git push origin main
 ```
 
 ## Roadmap
@@ -139,7 +134,8 @@ git push origin main
 - [x] Project 4 — template literals, number formatting, `localStorage` persistence
 - [x] Project 5 — arrays of objects, rendering a list, keeping track of state
 - [x] Project 6 — ES modules, array methods, event delegation, forms and modals
-- [ ] Loading data from an API
+- [ ] Project 7 — a multi-page site with shared styles *(in progress)*
+- [x] Project 8 — first API project: `fetch`, `async`/`await`, error handling
 - [ ] First React app
 - [ ] TypeScript and Next.js
 - [ ] Backend — Node, Express, and a database
