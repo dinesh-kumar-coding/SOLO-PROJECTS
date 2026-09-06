@@ -10,7 +10,7 @@
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
-  <img alt="Projects" src="https://img.shields.io/badge/projects-7-success?style=flat-square">
+  <img alt="Projects" src="https://img.shields.io/badge/projects-8-success?style=flat-square">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
 </p>
 
@@ -38,6 +38,7 @@ folder's `index.html`; the ones that need to be served over `http://` say so in 
 | 06 | **Dinesh's Diner** | A restaurant order app — build an order, get a meal-deal discount, pay through a card modal, then rate it. | HTML · CSS · JavaScript · ES modules | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_6/) · [Code](./solo_project_6) |
 | 07 | **My Learning Journal** | A multi-page blog — home, about, and article pages for writing about what I'm learning. | HTML · CSS · JavaScript | *Still building this one.* |
 | 08 | **Color Scheme Generator** | Pick a seed colour and a scheme type, get five matching colours from an API. Click a hex to copy it. | HTML · CSS · JavaScript · The Color API | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_8/) · [Code](./solo_project_8) |
+| 09 | **Movie Watchlist** | Search films by title and save the ones you want to watch. Two pages sharing one watchlist. | HTML · CSS · JavaScript · OMDb API · localStorage | [Demo](https://dinesh-kumar-coding.github.io/SOLO-PROJECTS/solo_project_9/) · [Code](./solo_project_9) |
 
 ## Tech stack
 
@@ -119,6 +120,15 @@ SOLO-PROJECTS/
 │   ├── style.css
 │   ├── script.js
 │   └── README.md
+├── solo_project_9/          # Movie Watchlist
+│   ├── images/
+│   ├── index.html           # Search page
+│   ├── watchlist.html       # Saved films
+│   ├── movies.js            # Shared across both pages
+│   ├── index.js
+│   ├── watchlist.js
+│   ├── style.css
+│   └── README.md
 ├── .gitattributes           # Keeps line endings consistent across machines
 ├── .gitignore
 ├── LICENSE
@@ -136,6 +146,7 @@ SOLO-PROJECTS/
 - [x] Project 6 — ES modules, array methods, event delegation, forms and modals
 - [ ] Project 7 — a multi-page site with shared styles *(in progress)*
 - [x] Project 8 — first API project: `fetch`, `async`/`await`, error handling
+- [x] Project 9 — two pages sharing data, parallel requests, saving between visits
 - [ ] First React app
 - [ ] TypeScript and Next.js
 - [ ] Backend — Node, Express, and a database
