@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    color: #111827;
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 0 1.25rem;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+    height: 12rem;
+    padding: 1.5rem 0 3rem 0;
+    background-color: #1F2430;
+    background-image: url("./images/header.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-short {
+    padding-bottom: 1.5rem;
+}
+
+.hero-title {
+    margin: 0 0 0 -20px;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.hero-link {
+    flex-shrink: 0;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero-link:hover {
+    text-decoration: underline;
+}
+
+.search {
+    display: flex;
+    max-width: 46rem;
+    margin: -1.4rem auto 2rem auto;
+    padding: 0 1.25rem;
+}
+
+.search-input {
+    flex-grow: 1;
+    min-width: 0;
+    height: 2.75rem;
+    padding: 0 0.9rem 0 2.4rem;
+    border: 1px solid #D1D5DB;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    background-color: #FFFFFF;
+    background-image: url("./images/search-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0.85rem center;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #111827;
+}
+
+.search-input::placeholder {
+    color: #9CA3AF;
+}
+
+.search-btn {
+    flex-shrink: 0;
+    height: 2.75rem;
+    padding: 0 1.5rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0 6px 6px 0;
+    background-color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #111827;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.search-btn:hover {
+    background-color: #F3F4F6;
+}
+
+.placeholder {
+    margin: 4rem 0;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #9CA3AF;
+}
+
+.placeholder p {
+    margin: 0 0 0.5rem 0;
+}
+
+.placeholder-link {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+.movie-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.movie {
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.movie:last-child {
+    border-bottom: none;
+}
+
+.movie-poster {
+    flex-shrink: 0;
+    width: 6.25rem;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #E5E7EB;
+}
+
+.movie-headline {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin-bottom: 0.4rem;
+}
+
+.movie-title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.movie-rating {
+    margin: 0;
+    font-size: 0.75rem;
+    color: #111827;
+    white-space: nowrap;
+}
+
+.movie-rating::before {
+    content: "★";
+    margin-right: 0.2rem;
+    color: #FEC654;
+}
+
+.movie-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 0.6rem;
+    font-size: 0.75rem;
+    color: #111827;
+}
+
+.action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 0.75rem;
+    color: #111827;
+    cursor: pointer;
+}
+
+.action-btn::before {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #111827;
+    color: #FFFFFF;
+}
+
+.action-btn-add::before {
+    content: "+";
+}
+
+.action-btn-remove::before {
+    content: "−";
+}
+
+.action-btn:hover:not(:disabled) {
+    text-decoration: underline;
+}
+
+.action-btn:disabled {
+    color: #9CA3AF;
+    cursor: not-allowed;
+}
+
+.action-btn:disabled::before {
+    background-color: #9CA3AF;
+}
+
+.movie-plot {
+    margin: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #6B7280;
+}
+
+.plot-full {
+    display: none;
+}
+
+.movie.is-expanded .plot-short {
+    display: none;
+}
+
+.movie.is-expanded .plot-full {
+    display: inline;
+}
+
+.read-more {
+    margin-left: 0.25rem;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 0.875rem;
+    color: #111827;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 30em) {
+
+    .hero-title {
+        font-size: 1.75rem;
+    }
+
+    .movie {
+        gap: 0.9rem;
+    }
+
+    .movie-poster {
+        width: 4.5rem;
+    }
+
+    .movie-meta {
+        gap: 0.75rem;
+    }
+}
